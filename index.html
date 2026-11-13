@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171326">
+  <title>Instagram Community</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root { color-scheme: dark; --pink:#e1306c; --purple:#833ab4; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; padding:24px;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:#fff;
+      background:radial-gradient(ellipse at 50% 20%, #492044 0%, #21172f 42%, #10101d 100%);
+    }
+    main {
+      width:min(100%,460px); padding:34px 26px; text-align:center;
+      border:1px solid rgba(225,48,108,.55); border-radius:28px;
+      background:rgba(18,17,35,.82); box-shadow:0 20px 70px #0008;
+    }
+    .logo {
+      width:76px;height:76px;margin:0 auto 18px;border-radius:23px;
+      display:grid;place-items:center;font-size:42px;font-weight:700;
+      background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+      color:white;
+    }
+    h1 { margin:0 0 10px;font-size:29px; }
+    p { color:#c8c3d5;line-height:1.55;margin:0 auto 24px; }
+    a {
+      display:block;text-decoration:none;font-weight:700;padding:15px 18px;
+      border-radius:999px;margin-top:13px;color:white;
+      background:linear-gradient(110deg,#405de6,#833ab4,#e1306c);
+    }
+    a.secondary { background:#29253a;border:1px solid #51465f; }
+    .note {font-size:12px;color:#9c95aa;margin:22px 0 0;}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo" aria-hidden="true">◎</div>
+    <h1>Instagram Community</h1>
+    <p>Welcome to our community hub. Discover updates, connect with the community, and visit Instagram through its official website.</p>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Open Official Instagram</a>
+    <a class="secondary" href="https://t.me/+2349032056637" target="_blank" rel="noopener noreferrer">Visit Telegram</a>
+    <div class="note">Independent community page · We never ask for your Instagram password.</div>
+  </main>
+  <script>
+    if (window.Telegram && window.Telegram.WebApp) {
+      window.Telegram.WebApp.ready();
+      window.Telegram.WebApp.expand();
+    }
+  </script>
+</body>
+</html>
